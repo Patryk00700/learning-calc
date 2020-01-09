@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<div class="controlS">
+  <div class="control " style="padding: 30px;">
+    <input [(ngModel)]="newEarnings" class="input" style="width: 350px;" type="text" placeholder="earnings">
+  </div>
+  <div class="control">
+    <div class="select" style="padding: 30px;">
+      <select>
+        <option>brutto</option>
+        <option>netto</option>
+      </select>
+    </div>
+  </div>
+  <div class="control-button" style="padding: 30px;">
+    <button (click)="addEarnings()" class="button is-primary" style="width: 200px;" >Add your earnings</button>
+  </div>
+</div>
+<div class="expenses">
+  <div class="control_amount">
+    <input class="input" style="width: 370px;" type="text" placeholder="expenses">
+  </div>
+  <div class="expenses_description">
+    <input class="input" style="width: 370px;" type="text" placeholder="description">
+  </div>
+  <div class="control-button">
+    <button class="button is-primary" style="width: 200px;">Add your expenses</button>
+  </div>
+</div>
+<ul>
+  <li *ngFor="let earnings of earningsList">
+    {{earnings}}
+    <p>
+      test
+    </p>
+  </li>
+</ul>
+
+
